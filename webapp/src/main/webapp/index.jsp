@@ -2,3 +2,6 @@
 bonjour 
 
 salut 
+
+
+test ansible
