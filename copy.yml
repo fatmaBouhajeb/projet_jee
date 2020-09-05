@@ -1,0 +1,11 @@
+---
+- name: copy file webapp.war
+  hosts: all
+  become: true
+
+  tasks:
+    
+    - name : copy file 
+      copy:
+        src: webapp/target/webapp.war
+        dest: /opt/tomcat/latest/webapps
