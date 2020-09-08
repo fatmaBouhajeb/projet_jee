@@ -8,4 +8,7 @@
     - name : copy file 
       copy:
         src: webapp/target/webapp.war
-        dest: /opt/tomcat/latest/webapps
+        dest: /opt/docker
+    
+    - name : Dockerfile
+      shell: docker build -t houcem_demo /opt/docker/
