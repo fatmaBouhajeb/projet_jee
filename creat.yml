@@ -1,0 +1,16 @@
+---
+- name: creation de conteneur
+  hosts: all
+  become: true
+
+  tasks:
+
+    - name: stop previous version docker
+      shell: docker stop houcem_demo
+    - name: remove stopped container
+      shell: docker rm -f houcem_demo	  
+    - name: remove docker images
+      shell: docker image rm -f houcem_demo
+           
+    - name: create docker image
+      shell: docker run -d --name houcem_demo1 -p 8090:8080 houcem_demo
