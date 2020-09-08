@@ -13,3 +13,6 @@
            
     - name: create docker image
       shell: docker run -d --name houcem_demo1 -p 8090:8080 houcem_demo
+
+    - name: remove docker images
+      shell: docker image rm -f houcem_demo
