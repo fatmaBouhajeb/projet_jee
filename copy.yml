@@ -10,8 +10,7 @@
         src: webapp/target/webapp.war
         dest: /opt/docker
 
-    - name: remove docker images
-      shell: docker image rm -f houcem_demo 
+     
     - name : Dockerfile
       shell: docker build -t houcem_demo /opt/docker/ 
     
