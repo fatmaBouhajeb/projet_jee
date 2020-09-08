@@ -9,7 +9,8 @@
       shell: docker stop houcem_demo1
       ignore_errors: yes
     - name: remove stopped container
-      shell: docker rm -f houcem_demo1	  
+      shell: docker rm -f houcem_demo1
+      ignore_errors: yes	  
     
            
     - name: create docker image
