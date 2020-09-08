@@ -6,9 +6,9 @@
   tasks:
 
     - name: stop previous version docker
-      shell: docker stop houcem_demo
+      shell: docker stop houcem_demo1
     - name: remove stopped container
-      shell: docker rm -f houcem_demo	  
+      shell: docker rm -f houcem_demo1	  
     - name: remove docker images
       shell: docker image rm -f houcem_demo
            
