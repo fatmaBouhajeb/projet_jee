@@ -7,6 +7,7 @@
 
     - name: stop previous version docker
       shell: docker stop houcem_demo1
+      ignore_errors: yes
     - name: remove stopped container
       shell: docker rm -f houcem_demo1	  
     
