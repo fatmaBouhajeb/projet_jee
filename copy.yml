@@ -10,7 +10,19 @@
         src: webapp/target/webapp.war
         dest: /opt/docker
 
-     
+     - name: remove docker images
+       shell: docker image rm -f houcem_demo
+       ignore_errors: yes
+    - name: remove stopped container
+      shell: docker rm -f houcem_demo1
+      ignore_errors: yes	
+
     - name : Dockerfile
       shell: docker build -t houcem_demo /opt/docker/ 
     
+            
+    - name: create docker image
+      shell: docker run -d --name houcem_demo1 -p 8090:8080 houcem_demo
+
+
+
