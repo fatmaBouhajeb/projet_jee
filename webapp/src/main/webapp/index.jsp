@@ -1,4 +1,2 @@
-<h1> Hello, Welcome to DevOps training !!! by houcemkhlifi </h1>
-<h1> Hello, Welcome to DevOps training !!! by ayhouma </h1>
-
-<h1> Hello, Welcome to DevOps training !!! version final </h1>
+<h1 style="color: #1d68a7; text-align: center">Welcome to my test page</h1>
+<h1 style="text-align: center;color: #3490dc">Done by Fatma Bouhajeb</h1>
